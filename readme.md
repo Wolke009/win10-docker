@@ -39,6 +39,11 @@ services:
       - 3389:3389/udp
     stop_grace_period: 2m
     restart: on-failure
+    environment:
+      VERSION: "win7"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
+      DISK_SIZE: "60G"
 ```
 
 Via `docker run`
